@@ -1,0 +1,109 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #121212;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #1f1f1f;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  color: #ffd700;
+}
+nav a {
+  color: #ccc;
+  margin-left: 1em;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://i.imgur.com/B8kBZfQ.jpg') no-repeat center center/cover;
+  padding: 5em 2em;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 2.5em;
+  color: #fff;
+}
+.hero p {
+  font-size: 1.2em;
+  margin-top: 0.5em;
+}
+
+/* Accounts Section */
+.accounts {
+  padding: 3em 2em;
+  background: #1a1a1a;
+}
+.account-list {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.account-card {
+  background: #2c2c2c;
+  border-radius: 10px;
+  padding: 1em;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.account-card:hover {
+  transform: scale(1.05);
+}
+.account-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+.account-card h3 {
+  margin-top: 0.5em;
+  color: #ffd700;
+}
+.price {
+  color: #00ff9d;
+  font-weight: bold;
+  margin: 0.5em 0;
+}
+button {
+  padding: 0.5em 1em;
+  border: none;
+  background: #ffd700;
+  color: #000;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button:hover {
+  background: #e6c200;
+}
+
+/* Contact Section */
+.contact {
+  padding: 2em;
+  background: #111;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  padding: 1em;
+  text-align: center;
+  color: #aaa;
+}
