@@ -1,109 +1,82 @@
-/* Reset & Base Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 body {
+  margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: #121212;
-  color: #fff;
-  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #111;
 }
 
-/* Header */
 header {
-  background: #1f1f1f;
-  padding: 1em 2em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1.5em 1em;
 }
 header h1 {
-  color: #ffd700;
+  margin-bottom: 0.2em;
+  font-size: 1.8em;
 }
-nav a {
+header p {
+  font-size: 0.9em;
   color: #ccc;
-  margin-left: 1em;
-  text-decoration: none;
-}
-nav a:hover {
-  color: #fff;
 }
 
-/* Hero Section */
-.hero {
-  background: url('https://i.imgur.com/B8kBZfQ.jpg') no-repeat center center/cover;
-  padding: 5em 2em;
-  text-align: center;
-}
-.hero h2 {
-  font-size: 2.5em;
-  color: #fff;
-}
-.hero p {
-  font-size: 1.2em;
-  margin-top: 0.5em;
-}
-
-/* Accounts Section */
-.accounts {
-  padding: 3em 2em;
-  background: #1a1a1a;
-}
-.account-list {
+.feed {
   display: flex;
-  gap: 2em;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.account-card {
-  background: #2c2c2c;
-  border-radius: 10px;
+  flex-direction: column;
   padding: 1em;
-  width: 250px;
-  text-align: center;
-  transition: transform 0.3s ease;
+  gap: 1em;
 }
-.account-card:hover {
-  transform: scale(1.05);
+
+/* Card Style */
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: 0.3s;
 }
-.account-card img {
+.card img {
   width: 100%;
-  border-radius: 5px;
+  height: auto;
 }
-.account-card h3 {
-  margin-top: 0.5em;
-  color: #ffd700;
+.card .info {
+  padding: 1em;
+}
+.card h2 {
+  font-size: 1.2em;
+  margin-bottom: 0.3em;
+}
+.card p {
+  margin: 0.2em 0;
+  font-size: 0.95em;
 }
 .price {
-  color: #00ff9d;
+  color: #007b00;
   font-weight: bold;
-  margin: 0.5em 0;
-}
-button {
-  padding: 0.5em 1em;
-  border: none;
-  background: #ffd700;
-  color: #000;
-  cursor: pointer;
-  border-radius: 5px;
-}
-button:hover {
-  background: #e6c200;
+  margin-top: 0.5em;
 }
 
-/* Contact Section */
-.contact {
-  padding: 2em;
-  background: #111;
-  text-align: center;
+/* Buy Button */
+.btn {
+  display: inline-block;
+  margin-top: 0.8em;
+  background-color: #25D366;
+  color: #fff;
+  padding: 0.6em 1.2em;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.95em;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: #1eb85e;
 }
 
 /* Footer */
 footer {
-  background: #000;
-  padding: 1em;
   text-align: center;
-  color: #aaa;
+  font-size: 0.85em;
+  color: #666;
+  padding: 1em;
+  margin-top: 2em;
 }
