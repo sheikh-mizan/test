@@ -1,82 +1,103 @@
+/* Base Setup */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f5f5f5;
+  background-color: #f0f0f0;
   color: #111;
 }
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
 
+/* Header */
 header {
-  background-color: #000;
-  color: #fff;
+  background: #000;
+  color: white;
+  padding: 1.5em 0;
   text-align: center;
-  padding: 1.5em 1em;
 }
 header h1 {
-  margin-bottom: 0.2em;
-  font-size: 1.8em;
+  margin: 0;
+  font-size: 2em;
 }
 header p {
   font-size: 0.9em;
   color: #ccc;
 }
 
-.feed {
-  display: flex;
-  flex-direction: column;
-  padding: 1em;
-  gap: 1em;
+/* Main Title */
+main h2 {
+  text-align: center;
+  margin: 2em 0 1em;
 }
 
-/* Card Style */
-.card {
-  background-color: #fff;
-  border-radius: 12px;
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 1.5em;
+  padding-bottom: 2em;
+}
+
+/* Product Card */
+.product-card {
+  background: white;
+  border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   transition: 0.3s;
 }
-.card img {
-  width: 100%;
-  height: auto;
+.product-card:hover {
+  transform: scale(1.02);
 }
-.card .info {
+.product-card img {
+  width: 100%;
+  display: block;
+}
+.details {
   padding: 1em;
 }
-.card h2 {
-  font-size: 1.2em;
-  margin-bottom: 0.3em;
+.details h3 {
+  margin: 0 0 0.5em;
+  color: #000;
 }
-.card p {
-  margin: 0.2em 0;
-  font-size: 0.95em;
+.details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1em;
+}
+.details ul li {
+  font-size: 0.9em;
+  margin-bottom: 4px;
 }
 .price {
-  color: #007b00;
+  font-size: 1.1em;
   font-weight: bold;
-  margin-top: 0.5em;
+  color: #28a745;
+  margin-bottom: 0.8em;
 }
-
-/* Buy Button */
-.btn {
-  display: inline-block;
-  margin-top: 0.8em;
-  background-color: #25D366;
-  color: #fff;
-  padding: 0.6em 1.2em;
-  border-radius: 8px;
+.buy-btn {
+  display: block;
+  background: #25D366;
+  color: white;
+  text-align: center;
+  padding: 0.7em;
+  border-radius: 6px;
   text-decoration: none;
-  font-size: 0.95em;
   font-weight: bold;
 }
-.btn:hover {
-  background-color: #1eb85e;
+.buy-btn:hover {
+  background: #1da851;
 }
 
 /* Footer */
 footer {
+  background: #111;
+  color: #ccc;
+  padding: 1em 0;
   text-align: center;
-  font-size: 0.85em;
-  color: #666;
-  padding: 1em;
-  margin-top: 2em;
+  font-size: 0.9em;
 }
+
